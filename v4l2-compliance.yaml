@@ -96,3 +96,14 @@ projects:
     url: https://bugs.linaro.org/show_bug.cgi?id=4637
     active: true
     intermittent: false
+  - environments: *environments_all
+    notes: >
+      Format ioctls (Input 0):
+      fail: ../../../v4l-utils-1.18.1/utils/v4l2-compliance/v4l2-test-formats.cpp(265): unknown flag 000001e0 returned
+      test VIDIOC_ENUM_FMT/FRAMESIZES/FRAMEINTERVALS: FAIL
+    projects: *projects_all
+    test_names:
+    - v4l2-compliance/VIDIOC_ENUM_FMT-FRAMESIZES-FRAMEINTERVALS
+    url: https://bugs.linaro.org/show_bug.cgi?id=5756
+    active: true
+    intermittent: false
