@@ -846,6 +846,8 @@ projects:
     intermittent: true
   - environments:
     - qemu_arm
+    - qemu_arm-clang
+    - qemu_arm-debug
     notes: >
       LTP: dio: dio13 No space left on device
       This is a limitation of qemu_arm32
@@ -1161,6 +1163,8 @@ projects:
   - environments:
     - qemu_arm
     - x15
+    - qemu-arm-debug
+    - qemu-arm-clang
     notes: >
       LTP syscalls test case getrlimit03 test failed on arm x15 device and qemu_arm.
        BROK Test killed by SIGILL!
@@ -1265,9 +1269,13 @@ projects:
     intermittent: false
   - environments:
     - qemu_i386
+    - qemu-i386-clang
+    - qemu-i386-debug
     - juno-r2-compat
     - qemu_x86_64-compat
     - qemu_arm64-compat
+    - qemu-arm-clang
+    - qemu-arm-debug
     notes: >
       LKFT: qemu: LTP skip failed timing test cases on
       qemu_i386 and all compat mode testing
