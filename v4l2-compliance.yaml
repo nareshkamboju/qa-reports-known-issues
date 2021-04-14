@@ -107,3 +107,23 @@ projects:
     url: https://bugs.linaro.org/show_bug.cgi?id=5756
     active: true
     intermittent: false
+  - environments: *environments_all
+    notes: >
+      test VIDIOC_TRY_FMT: FAIL
+      fail: ../../../v4l-utils-1.18.1/utils/v4l2-compliance/v4l2-test-formats.cpp(444): pixelformat 56595559 (YUYV) for buftype 1 not
+    projects: *projects_all
+    test_names:
+    - v4l2-compliance/VIDIOC_TRY_FMT
+    url: https://bugs.linaro.org/show_bug.cgi?id=5757
+    active: true
+    intermittent: false
+  - environments: *environments_all
+    notes: >
+      test VIDIOC_G_FMT: FAIL
+      fail: ../../../v4l-utils-1.18.1/utils/v4l2-compliance/v4l2-test-formats.cpp(444): pixelformat 56595559 (YUYV) for buftype 1 not
+    projects: *projects_all
+    test_names:
+    - v4l2-compliance/VIDIOC_TRY_FMT
+    url: https://bugs.linaro.org/show_bug.cgi?id=5758
+    active: true
+    intermittent: false
